@@ -1,0 +1,430 @@
+/* Estilos Generales */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a5d84;
+  background-color: #e0e0e0;
+  line-height: 2;  /* Interlineado */
+  margin: 0;
+}
+
+header {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  background-color: #4caf50; /* Color de fondo */
+  z-index: 100; /* Asegura que el header esté encima de otros elementos */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  height: 50vh;
+  align-content: start;
+}
+
+.banner {
+  width: 100%;
+  height: 5px; /* Ajusta la altura según tus necesidades */
+  background-size: cover;
+  background-position: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 50vh;
+}
+
+.logo {
+  display: inline-block;
+  width: 150px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantén las proporciones del logo */
+  border-radius: 50%; 
+  filter: drop-shadow(0px 0px 12px white);
+}
+
+/* Nombre Empresa en la página */
+.tittle {
+  display: flex;
+  flex-direction: row; /* Alinear verticalmente */
+  justify-content:space-around;
+  align-items: center;
+  font-size: 20px; /* Tamaño ajustado para móviles */
+  padding: 10px; /* Ajustar padding */
+}
+
+/* Botones de navegación */
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Permitir que los botones se ajusten */
+  gap: 15px;
+}
+  
+/* Botones de las pestañas cuando damos click */
+.tab-button {
+  font-size: 20px; /* Ajusta el tamaño de la fuente para móviles */
+  padding: 10px 15px; /* Reduce el padding */
+  flex: 1; /* Permite que los botones ocupen espacio igual */
+  min-width: 100px; /* Establece un ancho mínimo */
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 70px;
+}
+
+.tab-button:hover {
+  background-color: #45a049;
+}
+
+.tab-button:active {
+  background-color: #a5d8a7;
+}
+
+.tab-content {
+  padding: 20px;
+  padding-top: 40px;
+  justify-items: center;
+}
+
+/* Nombre Empresa dentro del Header */
+h1 {
+  display: inline-block;
+  align-content: start;
+  margin: 0;
+  color: white;
+  filter: drop-shadow(0px 0px 5px #4caf50);
+}
+
+/* Contenedor de contenedores: misión, visión, valores */
+.mvv {
+  display: flex;
+  margin: 30px;
+  gap: 15px; 
+  justify-content: space-evenly; 
+}
+
+.vision, .mision, .valores {
+  padding: 20px;
+  background-color: #21659a;
+  border-radius: 10px;
+  flex: 1;
+  color: white; 
+}
+
+.vision:hover, .mision:hover, .valores:hover {
+  background-color: #4caf50;
+  transform: scale(1.1);
+}
+
+/* Títulos verdes del menú */
+h3 {
+  color: #3aa76d;
+}
+
+.contact-form-container {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form-container h2 {
+  color: #2A5D84;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #3AA76D;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #4DB6E7;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #2A5D84;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form {
+  background: white; /* Fondo blanco para el formulario */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar el formulario */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Espacio entre etiqueta y campo */
+  font-weight: bold; /* Texto en negrita */
+}
+
+input[type="number"] {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 20px; /* Espacio entre campos */
+  border: 1px solid #ddd; /* Borde suave */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+button {
+  background-color: #3498db; /* Color azul */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+button:hover {
+  background-color: #2980b9; /* Color más oscuro al pasar */
+}
+
+/*Aquí comienza el pie de página*/
+.pie-pagina {
+  width: 100%;
+  background-color: #21659a;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 30px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+  border-radius: 50%;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 300ms ease;
+  
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #45a049;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding:  0px;
+  }
+
+  .pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .red-social{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* Media Queries para dispositivos móviles */
+@media screen and (orientation: portrait) {        /*orientacion vertical*/
+
+  @media screen and (width < 768px) {
+    .tab-button {
+      font-size: 18px; /* Ajustar tamaño en pantallas pequeñas */
+      padding: 8px 12px; /* Ajustar padding */
+      flex-grow: 1;
+      flex-basis: 200;
+      width: 100%;
+      color:#E0E0E0;
+      background-color: #21659a;
+            
+    }
+
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; /* Permitir que los botones se ajusten */
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .tittle {
+      display: flex;
+      flex-direction: column; /* Alinear verticalmente */
+      justify-content: center;
+      align-items: center;
+      font-size: 20px; /* Tamaño ajustado para móviles */
+      padding: 10px; /* Ajustar padding */
+      width: auto;
+      flex-basis: 200;
+
+      h1{
+        font-size: 25px ;
+        text-align: center;
+        filter: drop-shadow(0px 0px 5px #4caf50);
+      }
+
+    }
+
+    h2,h3{
+      text-align: center;
+    }
+    
+    nav{
+      margin-top: 5px;
+    }
+
+    .tab-content {
+      margin-top: 250px ;
+      justify-items: center;
+      flex-grow: 1;
+      flex-basis: 200;
+    }  
+  
+    .mvv {
+      display:flex;
+      flex-wrap: wrap;
+      margin: 30px;
+      gap: 15px; 
+      justify-content: space-evenly; 
+    }
+    
+    .vision, .mision, .valores {
+      padding: 20px;
+      background-color: #21659a;
+      border-radius: 10px;
+      flex-grow: 1;
+      flex-basis: 200;
+      color: white; 
+    }
+    
+    .vision:hover, .mision:hover, .valores:hover {
+      background-color: #4caf50;
+      transform: scale(1.1);
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1490px) {
+    .tab-button {
+      font-size: 18px; /* Ajustar tamaño en pantallas pequeñas */
+      padding: 8px 12px; /* Ajustar padding */
+      height: 70px;
+    }
+    
+    .tittle {
+      font-size: 18px; /* Ajustar tamaño en pantallas pequeñas */
+      padding: 5px; /* Reducir padding */
+
+      h1{
+        filter: drop-shadow(0px 0px 5px #4caf50);
+      }
+    }
+
+    h2,h3{
+      text-align: center;
+    }
+  
+    .tab-content {
+       margin-top: 200px ;
+     
+    }  
+
+    .tab-content p {
+      text-align: justify;
+    }  
+
+    nav{
+      margin-top: 250px;
+    }
+  
+    .mvv {
+      display:flex;
+      flex-wrap: wrap;
+      margin: 30px;
+      gap: 15px; 
+      justify-content: space-evenly; 
+    }
+    
+    .vision, .mision, .valores {
+      padding: 20px;
+      background-color: #21659a;
+      border-radius: 10px;
+      flex-grow: 1;
+      flex-basis: 200;
+      color: white; 
+    }
+    
+    .vision:hover, .mision:hover, .valores:hover {
+      background-color: #4caf50;
+      transform: scale(1.1);
+    }
+  }
+  
+}
+
+
+
+
+
+
+
