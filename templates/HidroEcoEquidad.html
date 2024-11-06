@@ -145,13 +145,24 @@
        
 
       <div id="Proyectos" class="tab-content" style="display: none;">
-        <h2>Calcule aquí el porcentaje de energía renovable, según su consumo mensual</h2>
-        <form action="/calcular" method="POST">
-          <label for="consumo">Consumo eléctrico total (kWh):</label>
-          <input type="number" id="consumo" name="consumo" placeholder="Ingrese su consumo mensual" required>
-          <button type="submit">Calcular</button>
+        <h2>Calculadora de Energía Renovable</h2>
+        <form action="/calcular" method="post">
+            <label for="opcion">Selecciona una opción:</label>
+            <select id="opcion" name="opcion">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
+            <br><br>
+            <label for="consumo">Consumo mensual (kWh):</label>
+            <input type="number" id="consumo" name="consumo" required>
+            <br><br>
+            <input type="submit" value="Calcular">
         </form>
+    
     </div>
+
+
     <script>
     function openTab(evt, tabName) {
         var i, tabcontent, tabbuttons;
