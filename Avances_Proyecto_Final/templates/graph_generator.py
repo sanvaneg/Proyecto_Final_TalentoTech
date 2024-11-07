@@ -25,8 +25,9 @@ def generate_bar_graph():
   plt.legend()
 
   plt.tight_layout()
-  plt.savefig("static/images/bar_graph.png")
+  plt.savefig("/workspaces/sanvaneg.github.io/Avances_Proyecto_Final/templates/assets/imgs/bar_graph.png")
   plt.close()
+  plt.show()
 
 from flask import Flask, render_template
 from graph_generator import generate_bar_graph
@@ -36,4 +37,4 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     generate_bar_graph()
-    return render_template("home.html") 
+    return render_template("HidroEcoEquidad.html") 
